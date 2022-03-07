@@ -1,0 +1,63 @@
+    <body align="center">
+        <form id="formulir">
+
+        <style>
+            body{
+                background-color: #E4CDA7;
+                box-sizing: border-box;
+            }
+            input{
+                padding:10px;
+                border:0;
+                border-radius:10px;
+                border-bottom: 4px solid #8E806A;
+            }
+            button{
+                width: 100px;
+            }
+            
+   
+        </style>
+
+        
+        <table align="center" cellpadding="10" width="30%"  border="3" bgcolor="#F6EABE">
+        <thead >
+            <tr bgcolor="#8E806A">
+            <th colspan="2"><b>KALKULATORKU</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td color="black"><b>Angka 1</b></td>
+                <td><input type="text" name="a1" onfocus="angka1()" value="masukkan angka" /><br></td>
+            </tr>
+            
+            <tr>
+                <td><b>Angka 2</b></td>
+                <td> <input type="text" name="a2"onfocus="angka2()" value="masukkan angka" /><br></td>
+            </tr>
+            <tr>
+                <td><b>Hasil</b></td>
+                <td><input type="text" name="hasil" value="0" disabled /><br></td>
+            </tr>
+</tbody>
+<tfoot bgcolor="#8E806A">
+    <th colspan="2" align="center" >
+        <input type="button" name="tambah" onclick="ftambah()"  value="+"  />
+        <input type="button" name="kurang" onclick="fkurang()" value="-"/>
+        <input type="button" name="bagi"  onclick="fbagi()" value="/" />
+        <input type="button" name="kali"  onclick="fkali()"value="*" />
+        <input type="button" name="pangkat" onclick="fpangkat()" value="^" /><br><br>
+        <input type="button" name="batal"  onclick="kosongAll()" value="Batal" />
+    </th>
+</tfoot>
+</table>
+</form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
